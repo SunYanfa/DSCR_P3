@@ -10,26 +10,30 @@ public class OpenActivityCrear implements View.OnClickListener {
 
     private final Activity activity;
     private final EditText usuario;
-    Activity_registro registro = new Activity_registro();
-    String nombre, password;
+    private final EditText password;
 
-    public OpenActivityCrear(Activity activity, EditText usuario) {
-        this.activity=activity;this.usuario= usuario;
+    public OpenActivityCrear(Activity activity, EditText usuario, EditText password) {
+        this.activity=activity;
+        this.usuario= usuario;
+        this.password = password;
     }
     @Override
     public void onClick(View view) {
         Intent intent= new Intent (this.activity, Activity_Cuenta.class);
 
-        String usuario = this.usuario.getText().toString();
-        registro.setNombre();
-        nombre= registro.getNombre();
-        Log.d("myActivity", "El input: "+nombre);
-        if (nombre == null){
-            Log.d("myActivity", "onClick: algun campo esta vacio");
-        } else {
+        String user_name = this.usuario.getText().toString();
+        String user_pass = this.password.getText().toString();
+
+        Log.d("myActivity", "El input: <"+ user_name+">");
+
+        if (user_name != null && user_name.length() != 0 && user_pass != null && user_pass.length() != 0){
+
             Log.d("myActivity", "onClick: no hay campo vacio");
             this.activity.startActivity(intent);
 
+        } else {
+
+            Log.d("myActivity", "onClick: algun campo esta vacio");
         }
     }
 
