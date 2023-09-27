@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Practica3</string>
+    <string name="cuenta">DSCR_03</string>
+    <string name="bienvenido">¡Bienvenido!</string>
+    <string name="entrar">ENTRAR</string>
+    <string name="registro">REGISTRO</string>
+    <string name="usuario">Usuario</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="crear">CREAR CUENTA</string>
+    <string name="hola">Hola</string>
+    <string name="salir">SALIR</string>
+</resources>
