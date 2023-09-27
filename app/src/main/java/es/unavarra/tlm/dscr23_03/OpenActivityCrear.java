@@ -11,7 +11,7 @@ public class OpenActivityCrear implements View.OnClickListener {
     private final Activity activity;
     private final EditText usuario;
     Activity_registro registro = new Activity_registro();
-    String nombre;
+    String nombre, password;
 
     public OpenActivityCrear(Activity activity, EditText usuario) {
         this.activity=activity;this.usuario= usuario;
