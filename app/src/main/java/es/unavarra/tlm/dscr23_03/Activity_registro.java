@@ -4,11 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
 
-public class Activity_registro extends AppCompatActivity {
+public class Activity_registro extends AppCompatActivity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +27,7 @@ public class Activity_registro extends AppCompatActivity {
         //EditText usuario = findViewById(id.user_name);
         //usuario.setOnTouchListener(new TouchListener(this));
 
-        Log.d("myActivity", "setNombre: 123");
+
 
     }
 

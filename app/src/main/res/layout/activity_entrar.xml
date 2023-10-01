@@ -11,43 +11,42 @@
 
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="130px"
+        android:layout_height="100px"
         android:text="@string/cuenta"
-        android:paddingLeft="80px"
         android:fontFamily="serif"
+        android:paddingLeft="80px"
         android:textColor="@color/white"
         android:background="#009d71"
-         />
+        />
 
-    <TextView
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/user_name_iniciar_sesion"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/bienvenido"
+        android:hint="@string/usuario"
         android:fontFamily="cursive"
-        android:textColor="@color/white"
-        android:layout_marginTop="40px"
-        android:layout_marginLeft="30px"
+        android:layout_marginHorizontal="30px"
+        android:layout_marginTop="50px"
+        />
+    <EditText
+        android:id="@+id/password_iniciar_sesion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/contraseña"
+        android:fontFamily="cursive"
+        android:inputType="textPassword"
+        android:layout_marginHorizontal="30px"
         />
 
     <Button
-        android:id="@+id/boton_entrar"
+        android:id="@+id/boton_iniciar_sesion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/entrar"
-        android:backgroundTint="#009d71"
+        android:text="@string/iniciar_sesion"
         android:layout_margin="30px"
-        />
-
-    <Button
-        android:id="@+id/boton_registro"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/registro"
         android:backgroundTint="#009d71"
-        android:layout_margin="30px"
         />
 
 
 
 </LinearLayout>
-

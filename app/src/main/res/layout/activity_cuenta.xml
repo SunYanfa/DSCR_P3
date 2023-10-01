@@ -5,30 +5,37 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activity_Cuenta"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#5DC1B9">
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="100px"
         android:text="@string/cuenta"
+        android:fontFamily="serif"
         android:paddingLeft="80px"
         android:textColor="@color/white"
-        android:background="#000"
+        android:background="#009d71"
         />
 
     <TextView
+        android:id="@+id/bienvenida_cuenta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hola"
+        android:fontFamily="cursive"
         android:layout_marginTop="40px"
         android:layout_marginLeft="30px"
+        android:textColor="@color/white"
         />
 
     <Button
+        android:id="@+id/boton_salir"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/salir"
         android:layout_margin="30px"
+        android:backgroundTint="#009d71"
         />
 
 </LinearLayout>

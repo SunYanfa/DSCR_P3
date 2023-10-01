@@ -12,8 +12,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button button = (Button)findViewById(R.id.boton_registro);
-        button.setOnClickListener(new OpenActivityRegistro(this));
+        Button button_registro = (Button)findViewById(R.id.boton_registro);
+        button_registro.setOnClickListener(new OpenActivityRegistro(this));
+
+        Button button_entrar = (Button)findViewById(R.id.boton_entrar);
+        button_entrar.setOnClickListener(new OpenActivityEntrar(this));
 
        // finish();
     }
